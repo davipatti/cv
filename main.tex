@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{biblatex}[backend=biblatex,style=science]
+\addbibresource{references.bib}
+
+
+% Increase text height
+\textheight=700pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{David Joseph Pattinson | BA MRes}
+\address{e: davipatti10[at]gmail.com\\t: +44 7817 188201\\\url{https://github.com/davipatti}\\dob: 19\textsuperscript{th} Sep 1989}
+\address{Centre for Pathogen Evolution\\Department of Zoology\\University of Cambridge\\Cambridge, CB2 3EJ, UK}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{Education}
+\textbf{University of Cambridge}, Cambridge, UK\\
+{\sl PhD Infectious disease}. Department of Zoology, September 2014\hfill Ongoing\\
+{\sl BA Natural Science}. Queens' College, 2009--2012\hfill 1\textsuperscript{st} class
+
+\textbf{Imperial College London}, London, UK\\
+{\sl MRes Biosystematics}. Natural History Museum, 2012--2013\hfill Distinction
+
+\textbf{Alyesbury Grammar School}, Aylesbury, UK\\
+{\sl A level Maths, Further Maths, Biology, Chemistry, Physics}. 2000--2008\hfill 5$\times$A
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{Computational\\skills}
+
+I have used \textbf{Python} daily for 5 years; I write (e.g. \url{https://pymds.readthedocs.io}) and use packages for scientific research (e.g. \textbf{numpy}, \textbf{scipy}, \textbf{sci-kit learn}, \textbf{matplotlib}, \textbf{pandas}.) I have done some app development in \textbf{dash}.
+|
+I am familiar with \textbf{R} and \textbf{Javascript}.
+|
+I use the unix command line daily.
+|
+Scientific software I have used includes: \textbf{MrBayes}, \textbf{RAxML} and \textbf{mafft} for phylogenetics and \textbf{gromacs} and \textbf{amber} for structural biology.
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{Research\\projects}
+
+\par
+\textbf{Analysis of the antigenic evolution of seasonal influenza viruses}: Quantifying the relationship between VE and mismatch | Applying linear mixed models for association testing and genotype to phenotype mapping with antigneic phenotypes | A framework to rank substitutions by risk of causing major antigenic change.\\
+{\sl PhD} \hfill Supervised by Prof. Derek Smith \hfill Ongoing
+
+\textbf{Endogenous retrovirus screening in catarrhine primates}\\
+{\sl MRes} \hfill Supervised by Dr. Michael Tristem\hfill Distinction
+
+\textbf{Novel methods in mitochondrial DNA enrichment}\\
+{\sl MRes} \hfill Supervised by Dr. Martijn Timmermans\hfill Distinction
+
+\textbf{A morphometric assessment of species delimitation in Canarian Pericallis}\\
+{\sl MRes}\hfill Supervised by Dr. Mark Carine\hfill Distinction\\
+This contributed to a publication: \url{https://doi.org/10.1186/s12862-016-0766-1}.
+
+\textbf{Combining molecular and morphological data in phylogenetic analyses}\\
+{\sl BA} \hfill Supervised by Dr. Robert Asher\hfill 1\textsuperscript{st} class.\\
+For this project I won the {\sl Palaeontological Association Undergraduate Prize} and {\sl John Ray Trust Science Prize}.\\
+This project resulted in the following publication: \url{https://doi.org/10.1093/sysbio/syu077}.
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+
+\section{Additional\\experience}
+\employer{Nautral History Museum}
+\location{London, UK}
+\dates{Oct 2013 - Apr 2014}
+\title{\textbf{Research assistant}}
+\begin{position}
+    Compiled information for and helped develop Hypericum online: \url{http://hypericum.myspecies.info/}.
+\end{position}
+
+\employer{University Museum of Zoology}
+\location{Cambridge, UK}
+\dates{Jun--Aug 2011 and 2012}
+\title{\textbf{Research internships}}
+\begin{position}
+    Phylogenetic analyses using combined morphological and molecular data.
+    |
+    Artificial extinction experiments.
+    |
+    Characterised prenatal dental eruption sequences using $\mu$CT imagery.
+    |
+    Funded by the Weis-Fogh and the J. Arthur Ramsay funds.
+    |
+    Contributed to this publication: \url{https://doi.org/10.1080/02724634.2017.1317638}.
+\end{position}
+
+%-------------------------------------------------------------------------------
+\end{resume}
+\end{document}

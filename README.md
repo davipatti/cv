@@ -1,8 +1,8 @@
 # C.V. David Joseph Pattinson
 
-![main.pdf](main.pdf)
+![View CV](main.pdf).
 
-## Acknowledgments
+### Template:
 
 Medium Length Graduate Curriculum Vitae
 LaTeX Template

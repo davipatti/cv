@@ -1,6 +1,6 @@
 # C.V. David Joseph Pattinson
 
-![main.pdf](main.pdf)
+[PDF](main.pdf)
 
 ## Acknowledgments
 

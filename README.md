@@ -2,7 +2,7 @@
 
 [PDF](main.pdf)
 
-## Acknowledgments
+### Template:
 
 Medium Length Graduate Curriculum Vitae
 LaTeX Template

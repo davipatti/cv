@@ -45,17 +45,11 @@
 
 \documentclass[margin]{res}
 
-% Default font is the helvetica postscript font
-% \usepackage{helvetica}
 \topmargin=-0.5in % start text higher on the page
 \oddsidemargin=-0.5in
 \textwidth=6in % increase textwidth to get smaller right margin
 \usepackage{hyperref}
-\urlstyle{same}
-
-\usepackage{biblatex}[backend=biblatex,style=science]
-\addbibresource{references.bib}
-
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 
 % Increase text height
 \textheight=700pt
@@ -80,7 +74,15 @@
 }
 %-------------------------------------------------------------------------------
 
+
+
 \begin{resume}
+
+	I am a computational scientist interested in understanding, and predicting,
+	the antigenic evolution of seasonal influenza viruses and tracking
+	population immune responses to SARS-CoV-2. I use antigenic cartography,
+	antibody landscapes, phylogenetics, computational structural biology,
+	Bayesian inference and data visualisation.
 
 	%-------------------------------------------------------------------------------
 	%	Employment
@@ -95,36 +97,37 @@
 	%-------------------------------------------------------------------------------
 	\section{Education}
 	\textbf{University of Cambridge}, Cambridge, UK\\
-	{\sl PhD Infectious disease informatics}. Department of Zoology, 2014--2019\\
-	{\sl BA Natural Science}. Queens' College, 2009--2012\hfill 1\textsuperscript{st} class
-
+	{\sl Ph.D. Infectious disease informatics}. Department of Zoology, 2014--2019\hfill Pass\\
+	{\sl BA Natural Science}. Queens' College, 2009--2012\hfill 1\textsuperscript{st} class\\
 	\textbf{Imperial College London}, London, UK\\
-	{\sl MRes Biosystematics}. Natural History Museum, 2012--2013\hfill Distinction
-
+	{\sl MRes Biosystematics}. Natural History Museum, 2012--2013\hfill Distinction\\
 	\textbf{Alyesbury Grammar School}, Aylesbury, UK\\
 	{\sl A level Maths, Further Maths, Biology, Chemistry, Physics}. 2000--2008\hfill 5$\times$A
 	%-------------------------------------------------------------------------------
 
 	%-------------------------------------------------------------------------------
-	%	COMPUTER SKILLS SECTION
+	%	COMPUTATIONAL SKILLS
 	%-------------------------------------------------------------------------------
 	\section{Computational\\skills}
 
-	I have used \textbf{python} daily for 9 years; mainly writing (e.g. \href{https://ititer.readthedocs.io/}{ititer}, \href{https://pymds.readthedocs.io}{pymds}) and using packages for scientific research (e.g. \textbf{pymc3}, \textbf{numpy}, \textbf{scipy}, \textbf{scikit-learn}, \textbf{matplotlib}, \textbf{pandas}, \textbf{bambi}.) I have developed apps in \textbf{dash} and have some experience with \textbf{django}.
-	|
-	I am familiar with \textbf{R} and \textbf{Javascript}.
-	|
-	I use the unix command line daily.
-	|
-	Scientific software I have used includes: \textbf{MrBayes}, \textbf{RAxML} and \textbf{mafft} for phylogenetics and \textbf{gromacs} and \textbf{amber} for structural biology.
-
+	I have used \textbf{python} daily for 9 years; developing (e.g.
+	\href{https://ititer.readthedocs.io/}{ititer},
+	\href{https://pymds.readthedocs.io}{pymds}) and using scientific research
+	packages (e.g. \textbf{pymc3}, \textbf{numpy}, \textbf{scipy},
+	\textbf{scikit-learn}, \textbf{matplotlib}, \textbf{pandas},
+	\textbf{bambi}.) I make apps with \textbf{dash} and have some experience
+	with \textbf{django}. | I am familiar with \textbf{R} and
+	\textbf{Javascript}. | I use the unix command line daily. | Scientific
+	software I have used includes: \textbf{MrBayes}, \textbf{RAxML} and
+	\textbf{mafft} for phylogenetics and \textbf{gromacs} and \textbf{amber} for
+	structural biology, among many others. | I have used \textbf{snakemake} in
+	several projects.
+	
 	%-------------------------------------------------------------------------------
 	%	PROJECTS SECTION
 	%-------------------------------------------------------------------------------
 	\section{Research}
-
-    \href{https://scholar.google.co.uk/citations?user=q260RVcAAAAJ&hl=en}{Link} to publications.
-
+	\href{https://scholar.google.co.uk/citations?user=q260RVcAAAAJ&hl=en}{Link to my publications}.\\
 	\textbf{Predicting the antigenic evolution of seasonal influenza viruses with application to vaccination strategy}.
 	Quantifying the relationship between VE and mismatch.
 	|
@@ -132,22 +135,18 @@
 	|
 	A framework to rank substitutions by similarity to cluster transition substitutions.
     |
-    \href{https://www.repository.cam.ac.uk/handle/1810/304119}{Link} to thesis.
+    \href{https://www.repository.cam.ac.uk/handle/1810/304119}{Link to thesis}.
     \\
-	{\sl PhD} \hfill Supervised by Prof. Derek Smith \hfill Pass
-
+	{\sl Ph.D.} \hfill Supervised by Prof. Derek Smith \hfill Pass\\
 	\textbf{Endogenous retrovirus screening in catarrhine primates}\\
-	{\sl MRes} \hfill Supervised by Dr. Michael Tristem\hfill Distinction
-
+	{\sl MRes} \hfill Supervised by Dr. Michael Tristem\hfill Distinction\\
 	\textbf{Novel methods in mitochondrial DNA enrichment}\\
-	{\sl MRes} \hfill Supervised by Dr. Martijn Timmermans\hfill Distinction
-
+	{\sl MRes} \hfill Supervised by Dr. Martijn Timmermans\hfill Distinction\\
 	\textbf{A morphometric assessment of species delimitation in Canarian Pericallis}\\
-	{\sl MRes}\hfill Supervised by Dr. Mark Carine\hfill Distinction\\
-	
+	{\sl MRes}\hfill Supervised by Dr. Mark Carine\hfill Distinction\\	
 	\textbf{Combining molecular and morphological data in phylogenetic analyses}\\
 	{\sl BA} \hfill Supervised by Dr. Robert Asher\hfill 1\textsuperscript{st} class.\\
-	This won the Palaeontological Association Undergraduate Prize and John Ray Trust Science Prize.\\
+	This won the Palaeontological Association Undergraduate Prize and John Ray Trust Science Prize.
 
 	%-------------------------------------------------------------------------------
 
@@ -163,14 +162,13 @@
 	%-------------------------------------------------------------------------------
 
 	\section{Additional\\experience}
-	\employer{Nautral History Museum}
+	\employer{Natural History Museum}
 	\location{London, UK}
 	\dates{Oct 2013 - Apr 2014}
 	\title{\textbf{Research assistant}}
 	\begin{position}
 		Developed Hypericum online: \url{http://hypericum.myspecies.info/}.
 	\end{position}
-
 	\employer{University Museum of Zoology}
 	\location{Cambridge, UK}
 	\dates{Jun--Aug 2011 and 2012}
@@ -187,4 +185,5 @@
 
 	%-------------------------------------------------------------------------------
 \end{resume}
+
 \end{document}

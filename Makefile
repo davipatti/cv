@@ -1,7 +1,7 @@
-SHELL=/bin/bash
+.PHONY: clean
 
 build:
-	latexmk -pdf -pvc --synctex=1 main.tex
+	latexmk -pdf -pvc --synctex=1 cv.tex
 
 clean:
-	rm -f main.aux main.fdb_latexmk main.log main.run.xml main.dvi main.fls main.pdf main.synctex.gz
+	rm -f cv.aux cv.bbl cv.blg cv.fdb_latexmk cv.synctex.gz cv.log cv.fls cv.out cv.pdf

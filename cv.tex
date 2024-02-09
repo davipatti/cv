@@ -17,7 +17,7 @@
 % Publications
 \usepackage[
     sorting=ydnt,
-    maxnames=20,
+    maxnames=50,
     backend=biber,
     style=authoryear
 ]{biblatex}
@@ -27,7 +27,7 @@
 \setlength{\bibitemsep}{1.5\itemsep}
 
 % A bit more space around bib notes
-\DeclareFieldFormat{note}{\vspace{0.5em}\par\small\textit{Note:} #1}
+\DeclareFieldFormat{note}{\vspace{0.5em}\par\small#1}
 
 % Don't print "In: journal", just print "journal".
 \renewbibmacro{in:}{%
@@ -191,25 +191,12 @@
 {Natural languages:}
 {English \emph{(mother tongue)} and German\emph{(elementary)}.}
 
-
-
 \spacedhrule{1.6em}{-0.4em}
-
-\roottitle{Publications}
-(See this list on
-\href{https://scholar.google.co.uk/citations?user=q260RVcAAAAJ&hl=en}{Google scholar}.)
 
 \nocite{*}
 \printbibliography
 
-
 \spacedhrule{1.6em}{-0.4em}
-
-% \roottitle{Interests}
-
-% \inlineheadsection
-%   {}
-%   {}
 
 \end{document}
 

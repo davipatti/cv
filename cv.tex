@@ -1,20 +1,7 @@
-% LaTeX source of my resume
-% =========================
-
-% Commented for easy reuse... ;)
-
-% See the `README.md` file for more info.
-
-% This file is licensed under the CC-NC-ND Creative Commons license.
-
-
-% Start a document with the here given default font size and paper size.
 \documentclass[10pt,a4paper]{article}
 
-% Set the page margins.
 \usepackage[a4paper,margin=0.7in]{geometry}
 
-% Publications
 \usepackage[
     sorting=ydnt,
     maxnames=50,
@@ -41,17 +28,15 @@
   \usebibmacro{name:andothers}%
 }
 
-% Setup the language.
 \usepackage[english]{babel}
 
 % Makes resume-specific commands available.
 \usepackage{resume}
 
-\begin{document}  % begin the content of the document
-\sloppy  % this to relax whitespacing in favour of straight margins
+\begin{document}
+\sloppy  % this to relax white spacing in favour of straight margins
 
-% title on top of the document
-\maintitle{David Pattinson}{September 19, 1989}{Last update on \today}
+\maintitle{David Pattinson}{September 19, 1989}{Updated \today}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -63,22 +48,30 @@
 \noindent\href{mailto:davipatti@protonmail.com}{davipatti\mbox{}@\mbox{}protonmail.com}\sbull
 \textsmaller{+1} (516) 413-4078\sbull
 \href{https://github.com/davipatti}{github.com/davipatti}
-\\
-1 Bungtown Rd, Cold Spring Harbor, NY 11724
+\par \noindent 1 Bungtown Rd, Cold Spring Harbor, NY 11724
 
 \spacedhrule{0.5em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
-\roottitle{Summary}  % a root section title
+\roottitle{Summary} \begin{multicols}{2}
+  \emph{ I am a computational biologist with a background in evolutionary
+  biology. My infectious disease research spans inferring infection histories from messy
+  serological data, elucidating the antigenic effect of mutations and testing the
+  predictability of seasonal influenza viruses. I was promoted to Senior Scientist after
+  two years as a postdoc at the Influenza Research Institute (UW---Madison) and currently
+  lead computational investigations in the group, teach, and run my own projects. In
+  my career I have developed strong skills in Bayesian statistics, high throughput
+  computing, data visualisation and phylogenetics. }
 
-\begin{multicols}{2}
-  \noindent \emph{I am a computational scientist with a strong background in evolutionary
-  biology and have worked at the intersection of virology, immunology and disease
-  informatics since I began my Ph.D. in 2014. My current research focuses on assessing
-  and predicting seasonal influenza virus antigenic evolution as well as tracking
-  population immune responses to SARS-CoV-2. I use a wide range of methods including
-  Bayesian data analysis, antigenic cartography, antibody landscapes, phylogenetics and
-  computational structural biology. I enjoy creating custom data visualisations to gain
-  deep insights into patterns in data, underlying processes and how models function.}
+  \emph{
+  Fundamentally, I am interested in how different aesthetic or mathematical
+  representations of data can enable scientific inquiry. Aesthetically, I use data
+  visualisation as a core component of my work, iterating to generate custom
+  visualisations that provide detailed insight into datasets and the workings of
+  statistical models whilst empowering the viewer to see patterns they didn't know they
+  were looking for. Mathematically, I have used antigenic cartography and antibody
+  landscapes heavily to elucidate antigenic variation of viruses and infer the effects of
+  mutations.
+  }
 \end{multicols}
 
 \spacedhrule{0.9em}{-0.4em}
@@ -90,31 +83,27 @@
 
   \headedsubsection
   {Scientist I}
-  {Mar \apo22 -- present}
+  {Mar \apo22--present}
   {
 
-    \bodytext{ I was promoted to Scientist two years after joining Prof.\@ Kawaoka's lab
-      having provided expertise in antigenic cartography, antibody landscapes,
-      phylogenetics, computational structural biology, next-generation sequencing
-      analysis to the group. I teach in small groups, write bespoke analysis pipelines,
-      and continue my own research projects.}  
+    \bodytext{ I was promoted to Senior Scientist after two years at the IRI and now lead
+    computational investigations in the group comprising antigenic cartography, antibody
+    landscapes, phylogenetics, Bayesian statistics, computational structural biology and
+    next-generation sequencing analysis. }  
 
   }
   
   \headedsubsection
   {Postdoctoral Research Associate}
-  {Nov \apo19 -- Mar \apo22}
+  {Nov \apo19--Mar \apo22}
   {
 
-    \bodytext{I joined Prof.\@ Yoshihiro Kawaoka's lab to research
-      mechanisms of antigenic change using computational structural biology. The
-      COVID-19 pandemic prompted a switch to studying SARS-CoV-2 serology, for
-      instance by estimating important epidemioloical parameters such as
-      {\href{https://www.sciencedirect.com/science/article/pii/S2589537021000146}{antibody
-      deccay rates}}. I helped plan, design experiments for, and conduct analyses
-      for a prospective serosurveillance cohort in collaboration with
-      {\href{https://www.marshfieldresearch.org/}{Marshfield Clinic Research
-      Institute}} and the {\href{https://www.cdc.gov/}{U.S.\@ CDC.}}}
+    \bodytext{I joined Prof.\@ Yoshihiro Kawaoka's lab to research mechanisms of
+      antigenic change using computational structural biology. The COVID-19 pandemic
+      prompted a switch to studying SARS-CoV-2 serology involving running a
+      COVID-19 serosurveillance cohort in collaboration with
+      {\href{https://www.marshfieldresearch.org/}{MCRI}} and the
+      {\href{https://www.cdc.gov/}{U.S.\@ CDC.}}}
   
   }
   
@@ -128,18 +117,19 @@
 {University of Cambridge}
 {\textsc{Cambridge, UK}} {%
   \headedsubsection
-  {Ph.D. Infectious Disease Informatics, Department of Zoology} {2014 -- 2019}
-  {\bodytext{Supervised by Prof.\@ Derek Smith. Quantifying the relationship between
-  vaccine effectiveness and antigenic mismatch. LMMs for association testing and
-  GP-mapping with influenza antigenic phenotypes. A framework to rank substitutions by
-  similarity to those that have caused antigenic cluster transitions.} } }
+  {Ph.D. Infectious Disease Informatics, Department of Zoology} {2014--2019}
+  {\bodytext{Supervised by Prof.\@ Derek Smith.\sbull
+  Quantifying the relationship between vaccine effectiveness and antigenic mismatch.\sbull
+  LMMs for association testing and GP-mapping with influenza antigenic phenotypes.\sbull
+  A framework to rank substitutions by similarity to those that have caused antigenic cluster transitions.
+  } } }
 
 \headedsection
 {Imperial College London}
 {\textsc{London, UK}} {%
   \headedsubsection
   {MRes Biosystematics, Natural History Museum}
-  {2012 -- 2013}
+  {2012--2013}
   {\bodytext{
         Endogenous retrovirus screening in catarrhine primates (Dr.\@ Michael Tristem).\sbull
         Novel methods in mitochondrial DNA enrichment (Dr.\@ Martijn Timmermans).\sbull
@@ -153,7 +143,7 @@
 {\textsc{Cambridge, UK}} {%
   \headedsubsection
   {BA Natural Science, Queens' College}
-  {2009 -- 2012}
+  {2009--2012}
   {
     \bodytext{
       Part II Zoology. Research Project: Combining molecular and
@@ -172,7 +162,7 @@
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
 {Computational:} {
   
-  I have used \textbf{python} daily since 2013; developing (e.g.\@
+  I have used \textbf{python} virtually every day since 2013; developing (e.g.\@
   \href{https://ititer.readthedocs.io/}{ititer},
   \href{https://pymds.readthedocs.io}{pymds}) and using scientific research packages
   (e.g. \textbf{pymc}, \textbf{numpy}, \textbf{MDAnalysis}, \textbf{scipy},
@@ -183,8 +173,8 @@
   the unix command line and \textbf{git} daily.\sbull Bioinformatics software I have used
   includes: \textbf{MrBayes}, \textbf{RAxML} and \textbf{mafft} for phylogenetics and
   \textbf{gromacs} and \textbf{amber} for structural biology, among many others.\sbull I
-  have used \textbf{snakemake} to automate pipelines in several projects.\sbull
-  I have used the \textbf{slurm} and \textbf{HTCondor} cluster submission systems.}
+  have used \textbf{snakemake} to automate pipelines in several projects.\sbull I have
+  used the \textbf{slurm} and \textbf{HTCondor} cluster submission systems.}
 
 \vspace{0.5em}
 \inlineheadsection

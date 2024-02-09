@@ -14,13 +14,35 @@
 % Set the page margins.
 \usepackage[a4paper,margin=0.7in]{geometry}
 
-% For publications
-\usepackage[square,numbers]{natbib}
-\bibliographystyle{abbrvnat}
+% Publications
+\usepackage[
+    sorting=ydnt,
+    maxnames=20,
+    backend=biber,
+    style=authoryear
+]{biblatex}
+\addbibresource{ref.bib}
+
+% Slightly more space between bib items
+\setlength{\bibitemsep}{1.5\itemsep}
+
+% A bit more space around bib notes
+\DeclareFieldFormat{note}{\vspace{0.5em}\par\small\textit{Note:} #1}
+
+% Don't print "In: journal", just print "journal".
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+    \printtext{\bibstring{in}\intitlepunct}%
+  }%
+}
+
+\DeclareNameFormat{family}{%
+  \namepartfamily
+  \usebibmacro{name:andothers}%
+}
 
 % Setup the language.
 \usepackage[english]{babel}
-\hyphenation{Some-long-word}
 
 % Makes resume-specific commands available.
 \usepackage{resume}
@@ -143,15 +165,6 @@
   }
 }
 
-\headedsection
-{Aylesbury Grammar School}
-{\textsc{Aylesbury, UK}} {
-  \headedsubsection
-  {A level Maths, Further Maths, Biology, Chemistry, Physics}
-  {2000 -- 2008}
-  {}
-}
-
 \spacedhrule{0.9em}{-0.4em}
 
 \roottitle{Skills}
@@ -179,27 +192,24 @@
 {English \emph{(mother tongue)} and German\emph{(elementary)}.}
 
 
+
 \spacedhrule{1.6em}{-0.4em}
 
 \roottitle{Publications}
+(See this list on
+\href{https://scholar.google.co.uk/citations?user=q260RVcAAAAJ&hl=en}{Google scholar}.)
 
-\inlineheadsection
-{}
-{
-  \renewcommand{\bibsection}{
-    % (See this list on \href{https://scholar.google.co.uk/citations?user=q260RVcAAAAJ&hl=en}{Google scholar}.)
-}
-  \nocite{*}
-  \bibliography{ref}
-}
+\nocite{*}
+\printbibliography
+
 
 \spacedhrule{1.6em}{-0.4em}
 
 % \roottitle{Interests}
 
 % \inlineheadsection
-%   {Non-exhaustive and in alphabetical order:}
-%   {art, Buddhism, cryptography, functional programming, Go (board game), history, music (from classical and jazz to Berlin-techno), \acr{NLP}, permaculture, philosophy, rock climbing, startups, travel, typography (e.g.\ graphic design, \LaTeX), \acr{UX}-design and vegan cuisine.}
+%   {}
+%   {}
 
 \end{document}
 

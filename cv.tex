@@ -10,6 +10,8 @@
 ]{biblatex}
 \addbibresource{ref.bib}
 
+\DeclareBibliographyCategory{projects}
+
 % Slightly more space between bib items
 \setlength{\bibitemsep}{1.5\itemsep}
 
@@ -81,7 +83,7 @@
 {Influenza Research Institute, {University of Wisconsin---Madison}}{\textsc{Madison WI, USA}}{
 
   \headedsubsection
-  {Scientist 1}  % https://hr.wisc.edu/standard-job-descriptions/?q=RE043
+  {Scientist I}  % https://hr.wisc.edu/standard-job-descriptions/?q=RE043
   {Mar \apo22--present}
   {
 
@@ -181,8 +183,12 @@
 {English \emph{(mother tongue)}, German\emph{(elementary)}.}
 
 
-
 \nocite{*}
-\printbibliography[title=Publications]
+
+\addtocategory{projects}{pattinson.2024.2,pattinson.2024.3,pattinson.2024.4}
+
+\printbibliography[title=Current Projects,category=projects]
+
+\printbibliography[title=Publications,notcategory=projects]
 
 \end{document}
